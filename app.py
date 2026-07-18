@@ -49,7 +49,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 st.title("Random Forest Classifier For Iris Species DataSet")
 
-
+@st.cache
 def load_data():
     iris=load_iris()
     df=pd.DataFrame(iris.data,columns=iris.feature_names)
